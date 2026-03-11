@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du Lịch Việt Nam - Khám Phá Vẻ Đẹp Đất Nước</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Vietnam Travel</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#destinations">Điểm Đến</a></li>
+                    <li><a href="#packages">Tour</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#about">Giới Thiệu</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Khám Phá Vẻ Đẹp Việt Nam</h1>
+            <p class="hero-subtitle">Trải nghiệm những điểm đến tuyệt vời nhất với dịch vụ du lịch chất lượng cao</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Đặt Tour Ngay</button>
+                <button class="btn btn-secondary">Tìm Hiểu Thêm</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Việt Nam">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>An Toàn Tuyệt Đối</h3>
+                    <p>Đảm bảo sự an toàn cho mọi chuyến đi với các biện pháp bảo vệ toàn diện</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Giá Cả Hợp Lý</h3>
+                    <p>Tour du lịch chất lượng cao với mức giá cạnh tranh và minh bạch</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Linh Hoạt Thời Gian</h3>
+                    <p>Lịch trình linh hoạt, phù hợp với nhu cầu và thời gian của bạn</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Hỗ Trợ 24/7</h3>
+                    <p>Đội ngũ tư vấn chuyên nghiệp sẵn sàng hỗ trợ mọi lúc, mọi nơi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Khám Phá Việt Nam Qua Video</h2>
+                <p>Trải nghiệm vẻ đẹp đất nước qua những thước phim tuyệt đẹp</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video id="mainVideo" controls poster="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+                        <source src="sapaa_XUuzVThA.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn" id="playBtn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Việt Nam - Đất Nước Tuyệt Vời</h3>
+                    <p>Khám phá những cảnh đẹp tuyệt vời của Việt Nam từ Bắc vào Nam, từ núi cao đến biển xanh, từ thành phố hiện đại đến làng quê yên bình.</p>
+                    <div class="video-stats">
+                        <span><i class="fas fa-eye"></i> 15,420 lượt xem</span>
+                        <span><i class="fas fa-heart"></i> 2,340 lượt thích</span>
+                        <span><i class="fas fa-clock"></i> 3:45 phút</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video-gallery">
+                <h3>Video Khác</h3>
+                <div class="video-thumbnails">
+                    <div class="video-thumbnail" data-video="halongg_S6NelWXb.mp4">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Video 1">
+                        <div class="thumbnail-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="video-title">Hạ Long - Kỳ Quan Thiên Nhiên</span>
+                    </div>
+                    <div class="video-thumbnail" data-video="sapaa_XUuzVThA.mp4">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Video 2">
+                        <div class="thumbnail-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="video-title">Sapa - Thị Trấn Mờ Sương</span>
+                    </div>
+                    <div class="video-thumbnail" data-video="phuquocc_Gyxf5kcf.mp4">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Video 3">
+                        <div class="thumbnail-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="video-title">Phú Quốc - Đảo Ngọc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Điểm Đến Nổi Bật</h2>
+                <p>Khám phá những địa điểm du lịch hấp dẫn nhất Việt Nam</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hạ Long">
+                        <div class="destination-overlay">
+                            <span class="price">Từ 2.500.000đ</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Vịnh Hạ Long</h3>
+                        <p>Kỳ quan thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Quảng Ninh</span>
+                            <span><i class="fas fa-clock"></i> 3-5 ngày</span>
+                        </div>
+                        <button class="btn btn-outline">Xem Chi Tiết</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Sapa">
+                        <div class="destination-overlay">
+                            <span class="price">Từ 1.800.000đ</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Sapa</h3>
+                        <p>Thị trấn mờ sương với ruộng bậc thang và văn hóa dân tộc độc đáo</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Lào Cai</span>
+                            <span><i class="fas fa-clock"></i> 2-4 ngày</span>
+                        </div>
+                        <button class="btn btn-outline">Xem Chi Tiết</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Phú Quốc">
+                        <div class="destination-overlay">
+                            <span class="price">Từ 3.200.000đ</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Phú Quốc</h3>
+                        <p>Đảo ngọc với bãi biển đẹp, nước trong xanh và ẩm thực hải sản</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kiên Giang</span>
+                            <span><i class="fas fa-clock"></i> 4-6 ngày</span>
+                        </div>
+                        <button class="btn btn-outline">Xem Chi Tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tour Du Lịch Nổi Bật</h2>
+                <p>Lựa chọn tour phù hợp với nhu cầu và sở thích của bạn</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Tour Miền Bắc</h3>
+                        <div class="package-price">
+                            <span class="price">4.500.000đ</span>
+                            <span class="duration">5 ngày 4 đêm</span>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Hà Nội - Hạ Long - Sapa</li>
+                            <li><i class="fas fa-check"></i> Khách sạn 3-4 sao</li>
+                            <li><i class="fas fa-check"></i> Ăn sáng và tối</li>
+                            <li><i class="fas fa-check"></i> Hướng dẫn viên chuyên nghiệp</li>
+                            <li><i class="fas fa-check"></i> Vận chuyển xe đời mới</li>
+                        </ul>
+                        <button class="btn btn-primary">Đặt Tour</button>
+                    </div>
+                </div>
+                <div class="package-card featured">
+                    <div class="package-badge">Phổ Biến</div>
+                    <div class="package-header">
+                        <h3>Tour Miền Trung</h3>
+                        <div class="package-price">
+                            <span class="price">5.200.000đ</span>
+                            <span class="duration">6 ngày 5 đêm</span>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Đà Nẵng - Hội An - Huế</li>
+                            <li><i class="fas fa-check"></i> Khách sạn 4 sao</li>
+                            <li><i class="fas fa-check"></i> Ăn đầy đủ 3 bữa</li>
+                            <li><i class="fas fa-check"></i> Hướng dẫn viên tiếng Anh</li>
+                            <li><i class="fas fa-check"></i> Vé máy bay khứ hồi</li>
+                        </ul>
+                        <button class="btn btn-primary">Đặt Tour</button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Tour Miền Nam</h3>
+                        <div class="package-price">
+                            <span class="price">3.800.000đ</span>
+                            <span class="duration">4 ngày 3 đêm</span>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> TP.HCM - Đồng Bằng Sông Cửu Long</li>
+                            <li><i class="fas fa-check"></i> Khách sạn 3 sao</li>
+                            <li><i class="fas fa-check"></i> Ăn sáng và trưa</li>
+                            <li><i class="fas fa-check"></i> Hướng dẫn viên địa phương</li>
+                            <li><i class="fas fa-check"></i> Thuyền tham quan sông nước</li>
+                        </ul>
+                        <button class="btn btn-primary">Đặt Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Về Chúng Tôi</h2>
+                    <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực du lịch, chúng tôi tự hào là đối tác tin cậy của hàng nghìn khách hàng. Chúng tôi cam kết mang đến những trải nghiệm du lịch tuyệt vời nhất với dịch vụ chất lượng cao và giá cả hợp lý.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Năm Kinh Nghiệm</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50,000+</span>
+                            <span class="stat-label">Khách Hàng</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Điểm Đến</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Về chúng tôi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Liên Hệ Với Chúng Tôi</h2>
+                <p>Hãy để lại thông tin để được tư vấn miễn phí</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Điện Thoại</h4>
+                            <p>+84 837 665 752 </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@vietnamtravel.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Địa Chỉ</h4>
+                            <p>  Phường Buôn Ma Thuột , Tỉnh Đắk Lắk </p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Vietnam Travel</span>
+                    </div>
+                    <p>Chuyên cung cấp dịch vụ du lịch chất lượng cao tại Việt Nam với đội ngũ chuyên nghiệp và kinh nghiệm.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="#home">Trang Chủ</a></li>
+                        <li><a href="#destinations">Điểm Đến</a></li>
+                        <li><a href="#packages">Tour</a></li>
+                        <li><a href="#about">Giới Thiệu</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="#">Tour Trong Nước</a></li>
+                        <li><a href="#">Tour Nước Ngoài</a></li>
+                        <li><a href="#">Đặt Khách Sạn</a></li>
+                        <li><a href="#">Thuê Xe</a></li>
+                        <li><a href="#">Bảo Hiểm Du Lịch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hỗ Trợ</h4>
+                    <ul>
+                        <li><a href="#">Hướng Dẫn Đặt Tour</a></li>
+                        <li><a href="#">Chính Sách Hoàn Hủy</a></li>
+                        <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vietnam Travel. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
